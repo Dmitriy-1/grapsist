@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="menu_button">
+    <input class="canvas_filed_button" type="file" id="imageLoader" accept=".jpg, .jpeg, .png">
+    <input class="canvas_filed_button" id="filter_negative" type="button" onclick="negativeFilter()" value="Фильтр негатив">
+    <input class="canvas_filed_button" type="button" onclick="function_blur()" value="Размытие изображения">
+    <input class="canvas_filed_button" type="button" onclick="grayFilter()" value="Фильтр серого">
+    <input class="canvas_filed_button" type="button" onclick="saveCanvasAsImageFile()" value="Сохранить">
+</div>
+<div class="div_canvas">
+
+    <canvas class="canvas_filed" id="imageCanvas"></canvas>
+</div>
+
+<script src="/script.js"></script>
+</body>
+
+</html>
